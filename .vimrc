@@ -1,4 +1,5 @@
 syntax on
+colo koehler
 
 "basic
 set number
@@ -10,6 +11,8 @@ set cindent
 set showbreak=...
 set smarttab
 set cursorline
+"hi CursorLine   cterm=bold 
+hi CursorLine   cterm=bold 
 
 "searching
 set incsearch
@@ -55,5 +58,3 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-
-"nnoremap <leader>s :mksession<CR>  " mapping for save the Session, to open use -S
